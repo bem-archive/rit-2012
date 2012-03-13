@@ -1,6 +1,8 @@
 all:: bem-bl sets
 all:: remove-bom
 
+all:: $(patsubst %.wiki,%.html,$(wildcard *.wiki))
+
 sets: sets/bem-bl-blocks
 	echo 'sets'
 
@@ -15,6 +17,17 @@ blocks/%:
 	bem create block -T decl.js \
 	--force \
 	-l blocks $(*F)
+
+%.html: %.bemjson.js %.bemhtml.js %.css %.ie.css %.js
+	echo 'xxxxxxxxxxxx'
+
+%.bemjson.js: %.content.bemjson.js
+	bem create block -T lib/bem/techs/bemjson.js --force \
+	-l . \
+	$(*F)
+
+%.content.bemjson.js: %.wiki
+	shmakowiki -i $(*F).wiki -o $@ -f bemjson
 
 GIT ?= git
 GIT_PROTOCOL ?= git
