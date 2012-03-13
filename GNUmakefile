@@ -1,4 +1,20 @@
-BEMBL_PREFIX = bem-bl
+all:: bem-bl sets
+all:: remove-bom
+
+sets: sets/bem-bl-blocks
+	echo 'sets'
+
+sets/%: blocks
+	make -C $(@) -B
+
+.SECONDEXPANSION:
+blocks: $$(wildcard $$@/*)
+	echo $@
+
+blocks/%:
+	bem create block -T decl.js \
+	--force \
+	-l blocks $(*F)
 
 GIT ?= git
 GIT_PROTOCOL ?= git
@@ -31,22 +47,9 @@ bem-bl:
 
 bem-bl/: bem-bl
 
-.PHONY: FORCE
-FORCE:
+.PHONY: remove-bom
+remove-bom:
+	find . -name '*.wiki' | xargs sed -i '1 s/^\xef\xbb\xbf//'
+	find . -name '*.doc.js' | xargs sed -i '1 s/^\xef\xbb\xbf//'
 
-SET_SOURCE = blocks
-
-# Уровни переопределения для примеров (все пути предваряются $(BEMBL_PREFIX))
-# $(1) - Путь-префикс: blocks/
-# $(2) - Директория уровня страницы: blocks/b-block
-# $(3) - Дочерняя директория страницы: blocks/b-block
-# $(4) - Директория страницы: blocks/b-block/examples
-# $(5) - Префикс для собираемых файлов страницы: blocks/b-block/examples/example-name
-EXAMPLE_LEVELS = $(BEMBL_PREFIX)blocks-common \
-$(BEMBL_PREFIX)blocks-desktop \
-blocks \
-$(wildcard $(1)$(5).blocks)
-
-DOC_LEVELS = $(BEMBL_PREFIX)blocks
-
-#include lib/make/sets.mk
+.PHONY: all sets
