@@ -104,7 +104,7 @@ all:: examples
 
 PAGES_TECHS_bemdecl.js := $(or $(DOC_TECHS_bemdecl.js),)
 
-PAGES_SUFFIXES_bemdecl.js := ru.html en.html
+PAGES_SUFFIXES_bemdecl.js := ru.doc.js en.doc.js
 
 PAGE_LEVELS = $(DOC_LEVELS)
 
@@ -199,8 +199,7 @@ $(5).en.doc.js $(5).ru.doc.js:: $(5).decl.js
 .PHONY: $(5).decl.js
 $(5).decl.js:: $(5).bemdecl.js
 	bem build \
-		-l $(BEMBL_PREFIX)blocks-common \
-		-l $(BEMBL_PREFIX)blocks-desktop \
+		-l ../../blocks \
 		-d $(5).bemdecl.js \
 		-t decl.js \
 		-n $(4) \
