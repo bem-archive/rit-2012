@@ -1,3 +1,6 @@
 bem-bl/
 node_modules/
 *.decl.js
+sets/*/*/*.deps.js
+sets/*/*/*.bemdecl.js
+sets/*/*/*.doc.js
