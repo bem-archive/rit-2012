@@ -1,0 +1,3 @@
+block b-test {
+    content: 'b-test block'
+}
