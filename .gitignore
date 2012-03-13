@@ -1,2 +1,3 @@
 bem-bl/
 node_modules/
+*.decl.js
