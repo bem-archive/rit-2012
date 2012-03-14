@@ -26,12 +26,12 @@ endif
 
 YENV ?= development
 
-EXAMPLES ?= $(shell find $(SET_SOURCE) \( -wholename '*/examples/*.bemjson.js' \) | sed -e 's~../../blocks/~~;s~.bemjson.js$$~~')
+EXAMPLES ?= $(shell find $(SET_SOURCE) \( -wholename '*/examples/*.bemjson.js' \) | sed -e 's~$(SET_SOURCE)/~~;s~.bemjson.js$$~~')
 
 TECH_PATH = $(1)
 TECH_PATH_bemhtml = $(BEMBL_PREFIX)blocks-common/i-bem/bem/techs/bemhtml.js
 
-DOCS ?= $(shell find $(SET_SOURCE) -mindepth 1 -maxdepth 1 -type d -not -name '.*' | sed -e 's~../../blocks/~~')
+DOCS ?= $(shell find $(SET_SOURCE) -mindepth 1 -maxdepth 1 -type d -not -name '.*' | sed -e 's~$(SET_SOURCE)/~~')
 
 # ================================ Функции
 
@@ -199,7 +199,7 @@ $(5).en.doc.js $(5).ru.doc.js:: $(5).decl.js
 .PHONY: $(5).decl.js
 $(5).decl.js:: $(5).bemdecl.js
 	bem build \
-		-l ../../blocks \
+		-l $(SET_SOURCE) \
 		-d $(5).bemdecl.js \
 		-t decl.js \
 		-n $(4) \

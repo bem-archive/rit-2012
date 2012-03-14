@@ -6,7 +6,7 @@ exports.getConfig = function() {
     return bemUtil.extend({}, this.__base(), {
         set: {
             levels: this.resolvePaths([
-                '../../blocks'
+                '../../blocks2011'
             ])
         }
     });
