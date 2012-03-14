@@ -1,0 +1,17 @@
+BEMBL_PREFIX = ../../bem-bl/
+SET_SOURCE = ../../blocks2012
+
+# Уровни переопределения для примеров (все пути предваряются $(BEMBL_PREFIX))
+# $(1) - Путь-префикс: blocks/
+# $(2) - Директория уровня страницы: blocks/b-block
+# $(3) - Дочерняя директория страницы: blocks/b-block
+# $(4) - Директория страницы: blocks/b-block/examples
+# $(5) - Префикс для собираемых файлов страницы: blocks/b-block/examples/example-name
+EXAMPLE_LEVELS = $(BEMBL_PREFIX)blocks-common \
+$(BEMBL_PREFIX)blocks-desktop \
+../../blocks2012 \
+$(wildcard $(1)$(5).blocks)
+
+DOC_LEVELS = ../../blocks2012
+
+include ../../lib/make/sets.mk

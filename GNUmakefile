@@ -3,17 +3,19 @@ all:: remove-bom
 
 all:: $(patsubst %.wiki,%.html,$(wildcard *.wiki))
 
-sets: sets/blocks2011
+sets: $(wildcard sets/blocks*)
 	echo 'sets'
 
-sets/%: blocks2011
+.SECONDEXPANSION:
+sets/%: $$(*F)
+	echo $(*F)
 	make -C $(@) -B
 
 .SECONDEXPANSION:
 blocks%: $$(wildcard $$@/*)
 	echo $@
 
-blocks2011/%:
+blocks2011/% blocks2012/% blocks3012/%:
 	bem create block -T decl.js \
 	--force \
 	-l blocks $(*F)
