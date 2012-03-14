@@ -1,3 +1,9 @@
+BEM_CREATE=bem create block \
+		-l . \
+		-T $1 \
+		--force \
+		$(*F)
+
 all:: bem-bl sets
 all:: remove-bom
 
@@ -21,7 +27,7 @@ blocks2011/% blocks2012/% blocks3012/%:
 	-l blocks $(*F)
 
 %.html: %.bemjson.js %.bemhtml.js %.css %.ie.css %.js
-	echo 'xxxxxxxxxxxx'
+	$(call BEM_CREATE,bem-bl/blocks-common/i-bem/bem/techs/html.js,--force)
 
 %.bemjson.js: %.content.bemjson.js
 	bem create block -T lib/bem/techs/bemjson.js --force \
@@ -30,6 +36,66 @@ blocks2011/% blocks2012/% blocks3012/%:
 
 %.content.bemjson.js: %.wiki
 	shmakowiki -i $(*F).wiki -o $@ -f bemjson
+
+%.bemhtml.js: %.deps.js
+	bem build \
+		-l bem-bl/blocks-common \
+		-l bem-bl/blocks-desktop \
+		-l blocks \
+		-d $*.deps.js \
+		-t bem-bl/blocks-common/i-bem/bem/techs/bemhtml.js \
+		-n $(*F) \
+		-o ./
+
+%.deps.js: %.bemdecl.js
+	bem build \
+		-l bem-bl/blocks-common \
+		-l bem-bl/blocks-desktop \
+		-l blocks \
+		-d $*.bemdecl.js \
+		-t deps.js \
+		-n $(*F) \
+		-o ./
+
+%.bemdecl.js: %.bemjson.js
+	node lib/bemjson2bemdecl.js $*.bemjson.js
+
+.PRECIOUS: %.css
+%.css: %.deps.js
+	bem build \
+		-l bem-bl/blocks-common \
+		-l bem-bl/blocks-desktop \
+		-l blocks \
+		-d $*.deps.js \
+		-t css \
+		-n $(*F) \
+		-o ./
+	borschik -t css -i $@ -o $(@D)/_$(@F)
+
+.PRECIOUS: %.ie.css
+%.ie.css: %.css %.deps.js
+	touch $@
+	bem build \
+		-l bem-bl/blocks-common \
+		-l bem-bl/blocks-desktop \
+		-l blocks \
+		-d $*.deps.js \
+		-t ie.css \
+		-n $(*F) \
+		-o ./
+	borschik -t css -i $@ -o $(@D)/_$(@F)
+
+.PRECIOUS: %.js
+%.js: %.deps.js
+	touch $@
+	bem build \
+		-l bem-bl/blocks-common \
+		-l bem-bl/blocks-desktop \
+		-l blocks \
+		-d $*.deps.js \
+		-t js \
+		-n $(*F) \
+		-o ./
 
 GIT ?= git
 GIT_PROTOCOL ?= git
