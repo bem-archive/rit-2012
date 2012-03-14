@@ -4,16 +4,16 @@
         head: [
             {
                 elem: 'css',
-                url: '_92arrow_bem.css',
+                url: '_92-b-form-button_arrow.css',
                 ie: false
             },
             {
                 elem: 'css',
-                url: '_92arrow_bem.ie.css',
+                url: '_92-b-form-button_arrow.ie.css',
                 ie: 'IE'
             },
             { block: 'i-jquery', elem: 'core' },
-            { elem: 'js', 'url': '_92arrow_bem.js' }
+            { elem: 'js', 'url': '92-b-form-button_arrow.js' }
         ],
     content: [
         {
