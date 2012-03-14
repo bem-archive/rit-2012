@@ -2,10 +2,10 @@
     block: 'b-page',
     title: 'b-form-button',
     head: [
-        { elem: 'css', url: '_45ico_bem.css', ie: false },
-        { elem: 'css', url: '_45ico_bem.ie.css', ie: 'lt IE 8' },
+        { elem: 'css', url: '_45-b-form-button_ico.css', ie: false },
+        { elem: 'css', url: '_45-b-form-button_ico.ie.css', ie: 'lt IE 8' },
         { block: 'i-jquery', elem: 'core' },
-        { elem: 'js', url: '_45ico_bem.js' }
+        { elem: 'js', url: '45-b-form-button_ico.js' }
     ],
     content: {
         block: 'i-lego-example',

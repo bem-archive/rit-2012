@@ -4,16 +4,16 @@
         head: [
             {
                 elem: 'css',
-                url: '_93arrow_bem.css',
+                url: '_93-b-form-button_arrow_no-transparent.css',
                 ie: false
             },
             {
                 elem: 'css',
-                url: '_93arrow_bem.ie.css',
+                url: '_93-b-form-button_arrow_no-transparent.ie.css',
                 ie: 'IE'
             },
             { block: 'i-jquery', elem: 'core' },
-            { elem: 'js', 'url': '_93arrow_bem.js' }
+            { elem: 'js', 'url': '93-b-form-button_arrow_no-transparent.js' }
         ],
     content: [
         {
