@@ -1458,49 +1458,6 @@ BEM.INTERNAL = {
 })(BEM, jQuery);
 /* ../../../../bem-bl/blocks-common/i-bem/__internal/i-bem__internal.js: end */ /**/
 
-/* ../../../../bem-bl/blocks-common/i-jquery/__leftclick/i-jquery__leftclick.js: begin */ /**/
-/**
- * leftClick event plugin
- *
- * Copyright (c) 2010 Filatov Dmitry (alpha@zforms.ru)
- * Dual licensed under the MIT and GPL licenses:
- * http://www.opensource.org/licenses/mit-license.php
- * http://www.gnu.org/licenses/gpl.html
- *
- * @version 1.0.0
- */
-
-(function($) {
-
-var leftClick = $.event.special.leftclick = {
-
-    setup : function() {
-
-        $(this).bind('click', leftClick.handler);
-
-    },
-
-    teardown : function() {
-
-        $(this).unbind('click', leftClick.handler);
-
-    },
-
-    handler : function(e) {
-
-        if(!e.button) {
-            e.type = 'leftclick';
-            $.event.handle.apply(this, arguments);
-            e.type = 'click';
-        }
-
-    }
-
-};
-
-})(jQuery);
-/* ../../../../bem-bl/blocks-common/i-jquery/__leftclick/i-jquery__leftclick.js: end */ /**/
-
 /* ../../../../bem-bl/blocks-common/i-bem/__dom/i-bem__dom.js: begin */ /**/
 /** @requires BEM */
 /** @requires BEM.INTERNAL */
@@ -3101,6 +3058,56 @@ String.prototype.trim || (String.prototype.trim = function () {
 
 })();
 /* ../../../../bem-bl/blocks-common/i-ecma/__string/i-ecma__string.js: end */ /**/
+
+/* ../../../../bem-bl/blocks-common/i-bem/__dom/_init/i-bem__dom_init_auto.js: begin */ /**/
+/* дефолтная инициализация */
+$(function() {
+    BEM.DOM.init();
+});
+/* ../../../../bem-bl/blocks-common/i-bem/__dom/_init/i-bem__dom_init_auto.js: end */ /**/
+
+/* ../../../../bem-bl/blocks-common/i-jquery/__leftclick/i-jquery__leftclick.js: begin */ /**/
+/**
+ * leftClick event plugin
+ *
+ * Copyright (c) 2010 Filatov Dmitry (alpha@zforms.ru)
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ *
+ * @version 1.0.0
+ */
+
+(function($) {
+
+var leftClick = $.event.special.leftclick = {
+
+    setup : function() {
+
+        $(this).bind('click', leftClick.handler);
+
+    },
+
+    teardown : function() {
+
+        $(this).unbind('click', leftClick.handler);
+
+    },
+
+    handler : function(e) {
+
+        if(!e.button) {
+            e.type = 'leftclick';
+            $.event.handle.apply(this, arguments);
+            e.type = 'click';
+        }
+
+    }
+
+};
+
+})(jQuery);
+/* ../../../../bem-bl/blocks-common/i-jquery/__leftclick/i-jquery__leftclick.js: end */ /**/
 
 /* ../../../../blocks2011/b-form-button/b-form-button.js: begin */ /**/
 BEM.DOM.decl('b-form-button', {
