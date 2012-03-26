@@ -1,5 +1,7 @@
 .b-form-button
 {
+    position: relative;
+
     display: inline-block;
 
     outline: 0;
@@ -47,11 +49,6 @@ a.b-form-button:visited
     border: 0;
 }
 
-.b-form-button
-{
-    position: relative;
-}
-
 .b-form-button__click
 {
     position: absolute;
@@ -93,8 +90,6 @@ not all and (-webkit-min-device-pixel-ratio:0)
 {
     color: #000;
 
-    border-collapse: separate; /* IE9 */ /**/
-
     border-color: rgba(192,192,192,0.5) rgba(192,192,192,0.3) rgba(49,49,49,0.45);
 
     background: linear-gradient(top,  rgba(255,255,255,0.9) 10%,rgba(216,216,216,0.66) 75%,rgba(193,193,193,0.66) 92%,rgba(168,168,168,0.66) 100%);
@@ -119,36 +114,47 @@ not all and (-webkit-min-device-pixel-ratio:0)
     /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#ffffff',GradientType=0 );*/
 }
 
-.b-form-button_theme_normal-grey.b-form-button_focused_yes .b-form-button__normal
+.b-form-button_theme_normal-grey.b-form-button_focused_yes
 {
     box-shadow: 0 0 0.1em #ffd438, 0 0 0.13em #ffd438, 0 0 0.13em #ffd438;
     -moz-box-shadow: 0 0 0.1em #ffd438, 0 0 0.13em #ffd438;
     -webkit-box-shadow: 0 0 0.25em #ffd438, 0 0 0.25em #ffd438;
 }
 
-.b-form-button_theme_normal-grey.b-form-button_pressed_yes .b-form-button__normal
+.b-form-button_theme_normal-grey.b-form-button_pressed_yes
 {
-    border-style: double;
-    border-color: rgba(100,80,0,0.4) rgba(102,82,0,0.45) rgba(133,106,0,0.5);
-
     box-shadow: 0 0 0.1em #ffd438, 0 0 0.13em #ffd438, 0 0 0.13em #ffd438, inset 0 1px 0.17em rgba(0,0,0,0.32);
     /*box-shadow: 0 0 0.1em #ffd438, 0 0 0.13em #ffd438, 0 0 0.13em #ffd438, 0 0 0.13em #ffd438,0 0 0.13em #ffd438, inset 0 1px 3px rgba(0,0,0,1);*/
     -moz-box-shadow: 0 0 0.1em #ffd438, 0 0 0.13em #ffd438, inset 0 1px 0.17em rgba(0,0,0,0.32);
     -webkit-box-shadow: 0 0 0.25em #ffd438, 0 0 0.25em #ffd438, inset 0 1px 0.25em rgba(0,0,0,0.32);
 }
+
+.b-form-button_theme_normal-grey.b-form-button_pressed_yes .b-form-button__normal
+{
+    border-style: double;
+    border-color: rgba(100,80,0,0.4) rgba(102,82,0,0.45) rgba(133,106,0,0.5);
+}
+.b-form-button_type_normal
+{
+    border-radius: 0.27em;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
 .b-form-button_type_normal .b-form-button__normal
 {
     font: 13px Arial, sans-serif;
 
     display: inline-block;
 
-    margin: 0;
+    margin: 0 !important;
 
     border-radius: 0.27em;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
 
     border-width: 1px;
+    border-collapse: separate; /* IE9 */ /**/
     border-style: outset outset outset inset;
 
     background-clip: border-box;
@@ -161,6 +167,170 @@ not all and (-webkit-min-device-pixel-ratio:0)
     opacity: 0.35;
 }
 
+.b-form-button_type_complex
+{
+    /* background-image задаётся в _theme *//**/
+    background-repeat: no-repeat;
+    background-position: 100% -55px/*!head*/;
+}
+
+.b-form-button_type_complex .b-form-button__left
+{
+    font-style: normal;
+
+    display: inline-block;
+
+    height: 100%;
+
+    vertical-align: top;
+
+    background: no-repeat 0 2px; /* no-repeat жизненно необходимо для FF2, для других браузеров ничего не изменится  *//**/
+}
+
+.b-form-button_type_complex .b-form-button__content
+{
+    font: 13px Arial, sans-serif;
+
+    display: inline-block;
+
+    height: 100%;
+
+    text-align: center;
+    white-space: nowrap;
+
+    background: repeat-x 0 -112px;
+}
+
+/* Pressed */ /**/
+.b-form-button_pressed_yes
+{
+    background-position: 100% -399px !important;
+}
+
+.b-form-button_pressed_yes .b-form-button__left
+{
+    background-position: 0 -342px !important;
+}
+
+.b-form-button_pressed_yes .b-form-button__content
+{
+    background-position: 0 -456px !important;
+}
+
+/* Hovered */ /**/
+.b-form-button_hovered_yes
+{
+    background-position: 100% -226px;
+}
+
+.b-form-button_hovered_yes .b-form-button__left
+{
+    background-position: 0 -169px;
+}
+
+.b-form-button_hovered_yes .b-form-button__content
+{
+    background-position: 0 -283px;
+}
+
+/* Focused */ /**/
+.b-form-button_focused_yes
+{
+    background-position: 100% -570px;
+}
+
+.b-form-button_focused_yes .b-form-button__left
+{
+    background-position: 0 -513px;
+}
+
+.b-form-button_focused_yes .b-form-button__content
+{
+    background-position: 0 -627px;
+}
+
+.b-form-button_focused_yes.b-form-button_hovered_yes
+{
+    background-position: 100% -741px;
+}
+
+.b-form-button_focused_yes.b-form-button_hovered_yes .b-form-button__left
+{
+    background-position: 0 -684px;
+}
+
+.b-form-button_focused_yes.b-form-button_hovered_yes .b-form-button__content
+{
+    background-position: 0 -798px;
+}
+
+/* Disabled */ /**/
+body .b-form-button_disabled_yes
+{
+    background-position: 100% -910px !important;
+}
+
+body .b-form-button_disabled_yes .b-form-button__left
+{
+    background-position: 0 -853px !important;
+}
+
+body .b-form-button_disabled_yes .b-form-button__content
+{
+    background-position: 0 -967px !important;
+}
+
+.b-form-button_theme_grey-xl,
+.b-form-button_theme_grey-xl .b-form-button__left,
+.b-form-button_theme_grey-xl .b-form-button__content
+{
+    color: #000;
+    background-image: url("../../../../blocks2012/b-form-button/_theme/b-form-button_theme_grey-xl.png");
+}
+
+body .b-form-button_disabled_yes .b-form-button__content
+{
+    color: #999 !important;
+}
+
+.b-form-button_theme_grey-l,
+.b-form-button_theme_grey-l .b-form-button__left,
+.b-form-button_theme_grey-l .b-form-button__content
+{
+    color: #000;
+    background-image: url("../../../../blocks2012/b-form-button/_theme/b-form-button_theme_grey-l.png");
+}
+
+body .b-form-button_disabled_yes .b-form-button__content
+{
+    color: #999 !important;
+}
+
+.b-form-button_theme_grey-m,
+.b-form-button_theme_grey-m .b-form-button__left,
+.b-form-button_theme_grey-m .b-form-button__content
+{
+    color: #000;
+    background-image: url("../../../../blocks2012/b-form-button/_theme/b-form-button_theme_grey-m.png");
+}
+
+body .b-form-button_disabled_yes .b-form-button__content
+{
+    color: #999 !important;
+}
+
+.b-form-button_theme_grey-s,
+.b-form-button_theme_grey-s .b-form-button__left,
+.b-form-button_theme_grey-s .b-form-button__content
+{
+    color: #000;
+    background-image: url("../../../../blocks2012/b-form-button/_theme/b-form-button_theme_grey-s.png");
+}
+
+body .b-form-button_disabled_yes .b-form-button__content
+{
+    color: #999 !important;
+}
 .b-form-button_size_xl
 {
     height: 37px;

@@ -8,13 +8,18 @@ exports.blocks = [
             {
                 "name": "type",
                 "vals": [
-                    "normal"
+                    "normal",
+                    "complex"
                 ]
             },
             {
                 "name": "theme",
                 "vals": [
-                    "normal-grey"
+                    "normal-grey",
+                    "grey-xl",
+                    "grey-l",
+                    "grey-m",
+                    "grey-s"
                 ]
             },
             {

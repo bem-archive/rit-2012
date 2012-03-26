@@ -1,10 +1,17 @@
+.b-form-button_type_normal
+{
+    border-radius: 0.27em;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
 .b-form-button_type_normal .b-form-button__normal
 {
     font: 13px Arial, sans-serif;
 
     display: inline-block;
 
-    margin: 0;
+    margin: 0 !important;
 
     border-radius: 0.27em;
     -moz-border-radius: 3px;

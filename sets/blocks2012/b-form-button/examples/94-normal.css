@@ -4,6 +4,11 @@
 @import url(../../../../blocks2012/b-form-button/_pressed/b-form-button_pressed_yes.css);
 @import url(../../../../blocks2012/b-form-button/_theme/b-form-button_theme_normal-grey.css);
 @import url(../../../../blocks2012/b-form-button/_type/b-form-button_type_normal.css);
+@import url(../../../../blocks2012/b-form-button/_type/b-form-button_type_complex.css);
+@import url(../../../../blocks2012/b-form-button/_theme/b-form-button_theme_grey-xl.css);
+@import url(../../../../blocks2012/b-form-button/_theme/b-form-button_theme_grey-l.css);
+@import url(../../../../blocks2012/b-form-button/_theme/b-form-button_theme_grey-m.css);
+@import url(../../../../blocks2012/b-form-button/_theme/b-form-button_theme_grey-s.css);
 @import url(../../../../blocks2012/b-form-button/_size/b-form-button_size_xl.css);
 @import url(../../../../blocks2012/b-form-button/_size/b-form-button_size_l.css);
 @import url(../../../../blocks2012/b-form-button/_size/b-form-button_size_m.css);

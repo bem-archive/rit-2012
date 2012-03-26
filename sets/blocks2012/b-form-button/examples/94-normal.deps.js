@@ -145,6 +145,31 @@ exports.deps = [
     },
     {
         "block": "b-form-button",
+        "mod": "type",
+        "val": "complex"
+    },
+    {
+        "block": "b-form-button",
+        "mod": "theme",
+        "val": "grey-xl"
+    },
+    {
+        "block": "b-form-button",
+        "mod": "theme",
+        "val": "grey-l"
+    },
+    {
+        "block": "b-form-button",
+        "mod": "theme",
+        "val": "grey-m"
+    },
+    {
+        "block": "b-form-button",
+        "mod": "theme",
+        "val": "grey-s"
+    },
+    {
+        "block": "b-form-button",
         "mod": "size"
     },
     {
