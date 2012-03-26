@@ -12,36 +12,36 @@
             tag: 'p',
             content: {
                 block: 'b-form-button',
-                mods: { type: 'normal', theme: 'normal-grey', size: 'xl' },
+                mods: { type: 'normal', theme: 'normal-grey', size: 'xl', disabled: 'yes' },
                 type: 'submit',
-                content: 'Размер XL'
+                content: 'Disabled XL'
             }
         },
         {
             tag: 'p',
             content: {
                 block: 'b-form-button',
-                mods: { type: 'normal', theme: 'normal-grey', size: 'l' },
+                mods: { type: 'normal', theme: 'normal-grey', size: 'l', hovered: 'yes' },
                 type: 'button',
-                content: 'Размер L'
+                content: 'Hovered L'
             }
         },
         {
             tag: 'p',
             content: {
                 block: 'b-form-button',
-                mods: { type: 'normal', theme: 'normal-grey', size: 'm' },
+                mods: { type: 'normal', theme: 'normal-grey', size: 'm', pressed: 'yes' },
                 url: 'http://ya.ru',
-                content: 'Размер M'
+                content: 'Pessed M'
             }
         },
         {
             tag: 'p',
             content: {
                 block: 'b-form-button',
-                mods: { type: 'normal', theme: 'normal-grey', size: 's' },
+                mods: { type: 'normal', theme: 'normal-grey', size: 's', focused: 'yes' },
                 url: 'http://ya.ru',
-                content: 'Размер S'
+                content: 'Focused S'
             }
         }
     ]
