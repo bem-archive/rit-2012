@@ -9,7 +9,6 @@
     margin-right: -5px; /* FF2 *//**/
 }
 
-.b-form-button_size_m .b-form-button__simple,
 .b-form-button_size_m .b-form-button__content
 {
     font-size: 13px;
@@ -18,11 +17,4 @@
     padding: 0 10px;
 
     line-height: 25px;
-}
-
-.b-form-button_size_m .b-form-button__simple
-{
-    height: 22px;
-
-    line-height: 21px;
 }

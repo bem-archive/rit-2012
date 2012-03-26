@@ -22,15 +22,6 @@
                         type: 'button',
                         content: 'Я.Button'
                     }
-                },
-                {
-                    tag: 'p',
-                    content: {
-                        block: 'b-form-button',
-                        mods: { type: 'simple' },
-                        type: 'button',
-                        content: 'Я.Simple button'
-                    }
                 }
             ]
         }

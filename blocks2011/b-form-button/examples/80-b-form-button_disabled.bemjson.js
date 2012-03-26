@@ -31,27 +31,6 @@
                 mods: { disabled: 'yes' },
                 url: '/',
                 content: 'Я.Ссылка'
-            },
-            {
-                block: 'b-form-button',
-                attrs: { id: 'ya_simple-button' },
-                mods: { type: 'simple', disabled: 'yes' },
-                type: 'button',
-                content: 'Я.Просто button'
-            },
-            {
-                block: 'b-form-button',
-                attrs: { id: 'ya_simple-submit' },
-                mods: { type: 'simple', disabled: 'yes' },
-                type: 'submit',
-                content: 'Я.Просто submit'
-            },
-            {
-                block: 'b-form-button',
-                attrs: { id: 'ya_simple-link' },
-                mods: { type: 'simple', disabled: 'yes' },
-                url: '/',
-                content: 'Я.Просто сcылка'
             }
         ]
     }
