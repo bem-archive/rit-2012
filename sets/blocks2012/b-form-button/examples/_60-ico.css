@@ -1,0 +1,268 @@
+body
+{
+    background: olive;
+}
+.b-form-button
+{
+    display: inline-block;
+
+    outline: 0;
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+
+    text-align: right; /* Opera && FF2 *//**/
+}
+
+a.b-form-button:link,
+a.b-form-button:hover,
+a.b-form-button:visited
+{
+    text-decoration: none;
+}
+
+.b-form-button .b-icon
+{
+    position: relative;
+    top: 3px;
+
+    margin-right: 4px;
+}
+
+.b-form-button_type_simple .b-icon
+{
+    top: 2px;
+}
+
+.b-form-button__input
+{
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 -100%;
+    padding: 0;
+
+    vertical-align: top;
+
+    opacity: 0;
+    border: 0;
+    outline: 0;
+
+    font: 0/0 a;
+    letter-spacing: -10px; /* LEGO-6481 */
+}
+
+/* FF > 2 иначе инпут растягивается больше чем на 100%*//**/
+.b-form-button__input::-moz-focus-inner
+{
+    padding: 0;
+
+    border: 0;
+}
+
+.b-form-button
+{
+    position: relative;
+}
+
+.b-form-button__click
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    font: 0/0 a;
+}
+
+/* Страшный хак для всех Опер http://dimox.name/personal_css_hacks_for_opera_firefox_ie/ */ /**/
+@media all and (-webkit-min-device-pixel-ratio:10000),
+not all and (-webkit-min-device-pixel-ratio:0)
+{
+    .b-form-button__click
+    {
+        position: relative;
+        top: -100%;
+        left: 0;
+
+        display: block;
+    }
+}
+
+.i-ua_css_quirks .b-form-button__click
+{
+    margin-bottom: -100%;
+}
+.b-form-button_focused_yes
+{
+    background-position: 100% -570px;
+}
+
+.b-form-button_focused_yes .b-form-button__left
+{
+    background-position: 0 -513px;
+}
+
+.b-form-button_focused_yes .b-form-button__content
+{
+    background-position: 0 -627px;
+}
+
+.b-form-button_focused_yes.b-form-button_hovered_yes
+{
+    background-position: 100% -741px;
+}
+
+.b-form-button_focused_yes.b-form-button_hovered_yes .b-form-button__left
+{
+    background-position: 0 -684px;
+}
+
+.b-form-button_focused_yes.b-form-button_hovered_yes .b-form-button__content
+{
+    background-position: 0 -798px;
+}
+
+
+.b-form-button_hovered_yes
+{
+    background-position: 100% -226px;
+}
+
+.b-form-button_hovered_yes .b-form-button__left
+{
+    background-position: 0 -169px;
+}
+
+.b-form-button_hovered_yes .b-form-button__content
+{
+    background-position: 0 -283px;
+}
+
+body .b-form-button_disabled_yes
+{
+    background-position: 100% -910px !important;
+}
+
+body .b-form-button_disabled_yes .b-form-button__left
+{
+    background-position: 0 -853px !important;
+}
+
+body .b-form-button_disabled_yes .b-form-button__content
+{
+    background-position: 0 -967px !important;
+}
+
+.b-form-button_pressed_yes
+{
+    background-position: 100% -399px !important;
+}
+
+.b-form-button_pressed_yes .b-form-button__left
+{
+    background-position: 0 -342px !important;
+}
+
+.b-form-button_pressed_yes .b-form-button__content
+{
+    background-position: 0 -456px !important;
+}
+
+.b-form-button_pressed_yes .b-form-button__text
+{
+    padding-top: 1px;
+}
+
+.b-form-button_type_complex
+{
+    /* background-image задаётся в _theme *//**/
+    background-repeat: no-repeat;
+    background-position: 100% -55px/*!head*/;
+}
+
+.b-form-button_type_complex .b-form-button__left
+{
+    font-style: normal;
+
+    display: inline-block;
+
+    height: 100%;
+
+    vertical-align: top;
+
+    background: no-repeat 0 2px; /* no-repeat жизненно необходимо для FF2, для других браузеров ничего не изменится  *//**/
+}
+
+.b-form-button_type_complex .b-form-button__content
+{
+    font: 13px Arial, sans-serif;
+
+    display: inline-block;
+
+    height: 100%;
+
+    text-align: center;
+    white-space: nowrap;
+
+    background: repeat-x 0 -112px;
+}
+
+.b-form-button_type_complex .b-form-button__text
+{
+    display: inline-block;
+}
+
+.b-form-button_theme_grey-l,
+.b-form-button_theme_grey-l .b-form-button__left,
+.b-form-button_theme_grey-l .b-form-button__content
+{
+    color: #000;
+    background-image: url("../../../../blocks2012/b-form-button/_theme/b-form-button_theme_grey-l.png");
+}
+
+body .b-form-button_disabled_yes .b-form-button__content
+{
+    color: #999 !important;
+}
+
+.b-form-button_size_l
+{
+    height: 30px;
+}
+
+.b-form-button_size_l .b-form-button__left
+{
+    width: 5px;
+    margin-right: -5px; /* FF2 *//**/
+}
+
+.b-form-button_size_l .b-form-button__normal,
+.b-form-button_size_l .b-form-button__content
+{
+    font-size: 15px;
+
+    margin: 0 5px; /* margin-left для FF2 *//**/
+    padding: 0 10px;
+
+    line-height: 29px;
+}
+
+.b-form-button_size_l .b-form-button__normal
+{
+    height: 26px;
+
+    line-height: 25px;
+}
+
+.b-icon
+{
+    font: 0/0 a;
+
+    border: 0;
+
+}
+
