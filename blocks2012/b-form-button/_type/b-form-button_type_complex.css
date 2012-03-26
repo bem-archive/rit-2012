@@ -11,7 +11,8 @@
 
     display: inline-block;
 
-    height: 100%;
+    width: 5px;
+    margin-right: -5px; /* FF2 *//**/
 
     vertical-align: top;
 
@@ -20,11 +21,9 @@
 
 .b-form-button_type_complex .b-form-button__content
 {
-    font: 13px Arial, sans-serif;
-
     display: inline-block;
 
-    height: 100%;
+    margin: 0 5px; /* margin-left для FF2 *//**/
 
     text-align: center;
     white-space: nowrap;

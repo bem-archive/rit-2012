@@ -1,5 +1,7 @@
 .b-form-button
 {
+    font-family: Arial, sans-serif;
+
     position: relative;
 
     display: inline-block;
@@ -136,6 +138,8 @@ not all and (-webkit-min-device-pixel-ratio:0)
 }
 .b-form-button_type_normal
 {
+    overflow: hidden;
+
     border-radius: 0.27em;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -143,11 +147,7 @@ not all and (-webkit-min-device-pixel-ratio:0)
 
 .b-form-button_type_normal .b-form-button__normal
 {
-    font: 13px Arial, sans-serif;
-
     display: inline-block;
-
-    margin: 0 !important;
 
     border-radius: 0.27em;
     -moz-border-radius: 3px;
@@ -180,7 +180,8 @@ not all and (-webkit-min-device-pixel-ratio:0)
 
     display: inline-block;
 
-    height: 100%;
+    width: 5px;
+    margin-right: -5px; /* FF2 *//**/
 
     vertical-align: top;
 
@@ -189,11 +190,9 @@ not all and (-webkit-min-device-pixel-ratio:0)
 
 .b-form-button_type_complex .b-form-button__content
 {
-    font: 13px Arial, sans-serif;
-
     display: inline-block;
 
-    height: 100%;
+    margin: 0 5px; /* margin-left для FF2 *//**/
 
     text-align: center;
     white-space: nowrap;
@@ -333,21 +332,19 @@ body .b-form-button_disabled_yes .b-form-button__content
 }
 .b-form-button_size_xl
 {
+    font-size: 19px;
+}
+
+.b-form-button_size_xl .b-form-button__left,
+.b-form-button_size_xl .b-form-button__click,
+.b-form-button_size_xl .b-form-button__input,
+.b-form-button_size_xl .b-form-button__content
+{
     height: 37px;
 }
 
-.b-form-button_size_xl .b-form-button__left
-{
-    width: 5px;
-    margin-right: -5px; /* FF2 *//**/
-}
-
-.b-form-button_size_xl .b-form-button__normal,
 .b-form-button_size_xl .b-form-button__content
 {
-    font-size: 19px;
-
-    margin: 0 5px; /* margin-left для FF2 *//**/
     padding: 0 15px;
 
     line-height: 36px;
@@ -356,27 +353,26 @@ body .b-form-button_disabled_yes .b-form-button__content
 .b-form-button_size_xl .b-form-button__normal
 {
     height: 33px;
+    padding: 0 15px;
 
     line-height: 33px;
 }
 
 .b-form-button_size_l
 {
+    font-size: 15px;
+}
+
+.b-form-button_size_l .b-form-button__left,
+.b-form-button_size_l .b-form-button__click,
+.b-form-button_size_l .b-form-button__input,
+.b-form-button_size_l .b-form-button__content
+{
     height: 30px;
 }
 
-.b-form-button_size_l .b-form-button__left
-{
-    width: 5px;
-    margin-right: -5px; /* FF2 *//**/
-}
-
-.b-form-button_size_l .b-form-button__normal,
 .b-form-button_size_l .b-form-button__content
 {
-    font-size: 15px;
-
-    margin: 0 5px; /* margin-left для FF2 *//**/
     padding: 0 10px;
 
     line-height: 29px;
@@ -385,27 +381,26 @@ body .b-form-button_disabled_yes .b-form-button__content
 .b-form-button_size_l .b-form-button__normal
 {
     height: 26px;
+    padding: 0 10px;
 
     line-height: 25px;
 }
 
 .b-form-button_size_m
 {
+    font-size: 13px;
+}
+
+.b-form-button_size_m .b-form-button__left,
+.b-form-button_size_m .b-form-button__click,
+.b-form-button_size_m .b-form-button__input,
+.b-form-button_size_m .b-form-button__content
+{
     height: 26px;
 }
 
-.b-form-button_size_m .b-form-button__left
-{
-    width: 5px;
-    margin-right: -5px; /* FF2 *//**/
-}
-
-.b-form-button_size_m .b-form-button__normal,
 .b-form-button_size_m .b-form-button__content
 {
-    font-size: 13px;
-
-    margin: 0 5px; /* margin-left для FF2 *//**/
     padding: 0 10px;
 
     line-height: 25px;
@@ -414,33 +409,35 @@ body .b-form-button_disabled_yes .b-form-button__content
 .b-form-button_size_m .b-form-button__normal
 {
     height: 22px;
+    padding: 0 10px;
 
     line-height: 21px;
 }
 
 .b-form-button_size_s
 {
+    font: 11px Verdana, Arial, sans-serif;
+}
+
+.b-form-button_size_s .b-form-button__left,
+.b-form-button_size_s .b-form-button__click,
+.b-form-button_size_s .b-form-button__input,
+.b-form-button_size_s .b-form-button__content
+{
     height: 23px;
 }
 
-.b-form-button_size_s .b-form-button__left
-{
-    width: 5px;
-    margin-right: -5px; /* FF2 *//**/
-}
-
-.b-form-button_size_s .b-form-button__normal,
 .b-form-button_size_s .b-form-button__content
 {
-    font: 11px/21px Verdana, Arial, sans-serif;
-
-    margin: 0 5px; /* margin-left для FF2 *//**/
     padding: 0 9px;
+
+    line-height: 21px;
 }
 
 .b-form-button_size_s .b-form-button__normal
 {
     height: 19px;
+    padding: 0 9px;
 
     line-height: 17px;
 }

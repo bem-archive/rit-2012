@@ -1,5 +1,7 @@
 .b-form-button
 {
+    font-family: Arial, sans-serif;
+
     position: relative;
 
     display: inline-block;
