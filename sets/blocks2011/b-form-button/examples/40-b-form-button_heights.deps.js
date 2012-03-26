@@ -198,14 +198,5 @@ exports.deps = [
         "block": "b-form-button",
         "mod": "size",
         "val": "xl"
-    },
-    {
-        "block": "b-form-button",
-        "mod": "type"
-    },
-    {
-        "block": "b-form-button",
-        "mod": "type",
-        "val": "simple"
     }
 ];

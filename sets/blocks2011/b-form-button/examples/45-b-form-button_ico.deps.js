@@ -158,15 +158,6 @@ exports.deps = [
         "val": "l"
     },
     {
-        "block": "b-form-button",
-        "mod": "type"
-    },
-    {
-        "block": "b-form-button",
-        "mod": "type",
-        "val": "simple"
-    },
-    {
         "block": "b-icon"
     }
 ];

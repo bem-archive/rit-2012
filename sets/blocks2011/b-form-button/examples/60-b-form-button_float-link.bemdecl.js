@@ -17,12 +17,6 @@ exports.blocks = [
                     "right",
                     "left"
                 ]
-            },
-            {
-                "name": "type",
-                "vals": [
-                    "simple"
-                ]
             }
         ]
     }

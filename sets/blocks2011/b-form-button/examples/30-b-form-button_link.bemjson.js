@@ -17,15 +17,6 @@
                     url: 'http://ya.ru',
                     content: 'Я.Ссылка'
                 }
-            },
-            {
-                tag: 'p',
-                content: {
-                    block: 'b-form-button',
-                    mods: { type: 'simple' },
-                    url: 'http://ya.ru',
-                    content: 'Я.Простая ссылка'
-                }
             }
         ]
     }

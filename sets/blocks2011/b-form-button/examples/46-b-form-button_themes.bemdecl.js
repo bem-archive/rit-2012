@@ -9,24 +9,15 @@ exports.blocks = [
         "name": "b-form-button",
         "mods": [
             {
-                "name": "type",
+                "name": "theme",
                 "vals": [
-                    "simple"
+                    "blue-xl"
                 ]
             },
             {
                 "name": "size",
                 "vals": [
-                    "m",
-                    "l",
                     "xl"
-                ]
-            },
-            {
-                "name": "theme",
-                "vals": [
-                    "simple-lite-grey",
-                    "blue-xl"
                 ]
             }
         ]

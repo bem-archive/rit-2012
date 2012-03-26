@@ -160,36 +160,12 @@ exports.deps = [
     },
     {
         "block": "b-form-button",
-        "mod": "type"
-    },
-    {
-        "block": "b-form-button",
-        "mod": "type",
-        "val": "simple"
-    },
-    {
-        "block": "b-form-button",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "b-form-button",
-        "mod": "size",
-        "val": "l"
+        "mod": "theme",
+        "val": "blue-xl"
     },
     {
         "block": "b-form-button",
         "mod": "size",
         "val": "xl"
-    },
-    {
-        "block": "b-form-button",
-        "mod": "theme",
-        "val": "simple-lite-grey"
-    },
-    {
-        "block": "b-form-button",
-        "mod": "theme",
-        "val": "blue-xl"
     }
 ];

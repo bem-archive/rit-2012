@@ -22,24 +22,6 @@
                 tag: 'p',
                 content: {
                     block: 'b-form-button',
-                    mods: { type: 'simple', size: 'm' },
-                    url: 'http://ya.ru',
-                    content: 'Я.Простая ссылка серого цвета, меняю фон при наведении, в размерах [ s,m,l,xl ]'
-                }
-            },
-            {
-                tag: 'p',
-                content: {
-                    block: 'b-form-button',
-                    mods: { type: 'simple', theme: 'simple-lite-grey', size: 'l' },
-                    url: 'http://ya.ru',
-                    content: 'Я.Простая ссылка серого цвета, меняю цвет текста при наведении, в размерах [ s,m,l,xl ]'
-                }
-            },
-            {
-                tag: 'p',
-                content: {
-                    block: 'b-form-button',
                     mods: { theme: 'blue-xl', size: 'xl' },
                     url: 'http://ya.ru',
                     content: 'Я.Ссылка голубого цвета размером только xl'

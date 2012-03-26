@@ -54,47 +54,6 @@
                                 }
                             }
                         ]
-                    },
-                    {
-                        elem: 'cell',
-                        content: [
-                            {
-                                tag: 'p',
-                                content: {
-                                    block: 'b-form-button',
-                                    mods: { type: 'simple' },
-                                    url: 'http://ya.ru',
-                                    content: 'Я.Простая ссылка размером s'
-                                }
-                            },
-                            {
-                                tag: 'p',
-                                content: {
-                                    block: 'b-form-button',
-                                    mods: { type: 'simple', size: 'm' },
-                                    url: 'http://ya.ru',
-                                    content: 'Я.Простая ссылка размером m'
-                                }
-                            },
-                            {
-                                tag: 'p',
-                                content: {
-                                    block: 'b-form-button',
-                                    mods: { type: 'simple', size: 'l' },
-                                    url: 'http://ya.ru',
-                                    content: 'Я.Простая ссылка размером l'
-                                }
-                            },
-                            {
-                                tag: 'p',
-                                content: {
-                                    block: 'b-form-button',
-                                    mods: { type: 'simple', size: 'xl' },
-                                    url: 'http://ya.ru',
-                                    content: 'Я.Простая ссылка размером xl'
-                                }
-                            }
-                        ]
                     }
                 ]
             }
