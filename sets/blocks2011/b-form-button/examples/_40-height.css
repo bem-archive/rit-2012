@@ -84,7 +84,7 @@ a.b-form-button:visited
     outline: 0;
 
     font: 0/0 a;
-    letter-spacing: -10px; /* LEGO-6481 */
+    letter-spacing: -10px;
 }
 
 /* FF > 2 иначе инпут растягивается больше чем на 100%*//**/
@@ -94,13 +94,6 @@ a.b-form-button:visited
 
     border: 0;
 }
-
-/* WAI (begin) */
-/*.b-form-button__input*/
-/*{*/
-    /*visibility: hidden;*/
-/*}*/
-/* WAI (end) */
 
 .b-form-button
 {
