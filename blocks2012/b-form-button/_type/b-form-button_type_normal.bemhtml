@@ -3,6 +3,7 @@ block b-form-button, mod type normal {
     content: [
         {
             elem: 'normal',
+            tag: 'span',
             content: {
                 elem: 'text',
                 content: this.ctx.content
@@ -10,7 +11,5 @@ block b-form-button, mod type normal {
         },
         this._input
     ]
-
-    elem normal, tag: 'span'
 
 }

@@ -17,6 +17,11 @@ a.b-form-button:visited
     text-decoration: none;
 }
 
+.b-form-button__text
+{
+    display: inline-block;
+}
+
 .b-form-button__input
 {
     width: 100%;
@@ -140,21 +145,6 @@ body .b-form-button_disabled_yes .b-form-button__content
     background-position: 0 -967px !important;
 }
 
-.b-form-button_pressed_yes
-{
-    background-position: 100% -399px !important;
-}
-
-.b-form-button_pressed_yes .b-form-button__left
-{
-    background-position: 0 -342px !important;
-}
-
-.b-form-button_pressed_yes .b-form-button__content
-{
-    background-position: 0 -456px !important;
-}
-
 .b-form-button_pressed_yes .b-form-button__text
 {
     padding-top: 1px;
@@ -252,33 +242,33 @@ body .b-form-button_disabled_yes .b-form-button__content
     opacity: 0.35;
 }
 
-.b-form-button_size_m
+.b-form-button_size_xl
 {
-    height: 26px;
+    height: 37px;
 }
 
-.b-form-button_size_m .b-form-button__left
+.b-form-button_size_xl .b-form-button__left
 {
     width: 5px;
     margin-right: -5px; /* FF2 *//**/
 }
 
-.b-form-button_size_m .b-form-button__normal,
-.b-form-button_size_m .b-form-button__content
+.b-form-button_size_xl .b-form-button__normal,
+.b-form-button_size_xl .b-form-button__content
 {
-    font-size: 13px;
+    font-size: 19px;
 
     margin: 0 5px; /* margin-left для FF2 *//**/
-    padding: 0 10px;
+    padding: 0 15px;
 
-    line-height: 25px;
+    line-height: 36px;
 }
 
-.b-form-button_size_m .b-form-button__normal
+.b-form-button_size_xl .b-form-button__normal
 {
-    height: 22px;
+    height: 33px;
 
-    line-height: 21px;
+    line-height: 33px;
 }
 
 .b-form-button_size_l
@@ -308,5 +298,61 @@ body .b-form-button_disabled_yes .b-form-button__content
     height: 26px;
 
     line-height: 25px;
+}
+
+.b-form-button_size_m
+{
+    height: 26px;
+}
+
+.b-form-button_size_m .b-form-button__left
+{
+    width: 5px;
+    margin-right: -5px; /* FF2 *//**/
+}
+
+.b-form-button_size_m .b-form-button__normal,
+.b-form-button_size_m .b-form-button__content
+{
+    font-size: 13px;
+
+    margin: 0 5px; /* margin-left для FF2 *//**/
+    padding: 0 10px;
+
+    line-height: 25px;
+}
+
+.b-form-button_size_m .b-form-button__normal
+{
+    height: 22px;
+
+    line-height: 21px;
+}
+
+.b-form-button_size_s
+{
+    height: 23px;
+}
+
+.b-form-button_size_s .b-form-button__left
+{
+    width: 5px;
+    margin-right: -5px; /* FF2 *//**/
+}
+
+.b-form-button_size_s .b-form-button__normal,
+.b-form-button_size_s .b-form-button__content
+{
+    font: 11px/21px Verdana, Arial, sans-serif;
+
+    margin: 0 5px; /* margin-left для FF2 *//**/
+    padding: 0 9px;
+}
+
+.b-form-button_size_s .b-form-button__normal
+{
+    height: 19px;
+
+    line-height: 17px;
 }
 

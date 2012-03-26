@@ -32,7 +32,81 @@
     background: repeat-x 0 -112px;
 }
 
-.b-form-button_type_complex .b-form-button__text
+/* Pressed */ /**/
+.b-form-button_pressed_yes
 {
-    display: inline-block;
+    background-position: 100% -399px !important;
+}
+
+.b-form-button_pressed_yes .b-form-button__left
+{
+    background-position: 0 -342px !important;
+}
+
+.b-form-button_pressed_yes .b-form-button__content
+{
+    background-position: 0 -456px !important;
+}
+
+/* Hovered */ /**/
+.b-form-button_hovered_yes
+{
+    background-position: 100% -226px;
+}
+
+.b-form-button_hovered_yes .b-form-button__left
+{
+    background-position: 0 -169px;
+}
+
+.b-form-button_hovered_yes .b-form-button__content
+{
+    background-position: 0 -283px;
+}
+
+/* Focused */ /**/
+.b-form-button_focused_yes
+{
+    background-position: 100% -570px;
+}
+
+.b-form-button_focused_yes .b-form-button__left
+{
+    background-position: 0 -513px;
+}
+
+.b-form-button_focused_yes .b-form-button__content
+{
+    background-position: 0 -627px;
+}
+
+.b-form-button_focused_yes.b-form-button_hovered_yes
+{
+    background-position: 100% -741px;
+}
+
+.b-form-button_focused_yes.b-form-button_hovered_yes .b-form-button__left
+{
+    background-position: 0 -684px;
+}
+
+.b-form-button_focused_yes.b-form-button_hovered_yes .b-form-button__content
+{
+    background-position: 0 -798px;
+}
+
+/* Disabled */ /**/
+body .b-form-button_disabled_yes
+{
+    background-position: 100% -910px !important;
+}
+
+body .b-form-button_disabled_yes .b-form-button__left
+{
+    background-position: 0 -853px !important;
+}
+
+body .b-form-button_disabled_yes .b-form-button__content
+{
+    background-position: 0 -967px !important;
 }

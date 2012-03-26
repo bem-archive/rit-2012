@@ -150,11 +150,21 @@ exports.deps = [
     {
         "block": "b-form-button",
         "mod": "size",
-        "val": "m"
+        "val": "xl"
     },
     {
         "block": "b-form-button",
         "mod": "size",
         "val": "l"
+    },
+    {
+        "block": "b-form-button",
+        "mod": "size",
+        "val": "m"
+    },
+    {
+        "block": "b-form-button",
+        "mod": "size",
+        "val": "s"
     }
 ];

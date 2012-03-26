@@ -20,8 +20,10 @@ exports.blocks = [
             {
                 "name": "size",
                 "vals": [
+                    "xl",
+                    "l",
                     "m",
-                    "l"
+                    "s"
                 ]
             }
         ]

@@ -48,4 +48,6 @@ block b-form-button {
             return a;
         }
     }
+
+    elem text, tag: 'span'
 }

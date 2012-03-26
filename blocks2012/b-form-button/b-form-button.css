@@ -16,3 +16,8 @@ a.b-form-button:visited
 {
     text-decoration: none;
 }
+
+.b-form-button__text
+{
+    display: inline-block;
+}
