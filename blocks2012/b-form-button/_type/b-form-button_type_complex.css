@@ -12,6 +12,7 @@
     display: inline-block;
 
     width: 5px;
+    height: 100%;
     margin-right: -5px; /* FF2 *//**/
 
     vertical-align: top;
@@ -23,6 +24,7 @@
 {
     display: inline-block;
 
+    height: 100%;
     margin: 0 5px; /* margin-left для FF2 *//**/
 
     text-align: center;

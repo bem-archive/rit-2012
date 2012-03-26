@@ -3,10 +3,7 @@
     font: 11px Verdana, Arial, sans-serif;
 }
 
-.b-form-button_size_s .b-form-button__left,
-.b-form-button_size_s .b-form-button__click,
-.b-form-button_size_s .b-form-button__input,
-.b-form-button_size_s .b-form-button__content
+.b-form-button_size_s.b-form-button_type_complex
 {
     height: 23px;
 }
@@ -18,10 +15,14 @@
     line-height: 21px;
 }
 
+.b-form-button_size_s.b-form-button_type_normal
+{
+    height: 17px;
+}
+
 .b-form-button_size_s .b-form-button__normal
 {
-    height: 19px;
     padding: 0 9px;
 
-    line-height: 17px;
+    line-height: 15px;
 }

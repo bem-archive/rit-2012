@@ -191,5 +191,14 @@ exports.deps = [
         "block": "b-form-button",
         "mod": "size",
         "val": "s"
+    },
+    {
+        "block": "b-form-button",
+        "mod": "valign"
+    },
+    {
+        "block": "b-form-button",
+        "mod": "valign",
+        "val": "middle"
     }
 ];

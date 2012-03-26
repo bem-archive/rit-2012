@@ -38,13 +38,13 @@ exports.blocks = [
                 ]
             },
             {
-                "name": "hovered",
+                "name": "valign",
                 "vals": [
-                    "yes"
+                    "middle"
                 ]
             },
             {
-                "name": "pressed",
+                "name": "hovered",
                 "vals": [
                     "yes"
                 ]
