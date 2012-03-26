@@ -1,0 +1,51 @@
+block b-form-button {
+
+    default, !this._inputClick: {
+        local(
+            this._inputClick = true,
+            this._input = (this.ctx.type ?
+                {
+                    elem: 'input',
+                    type: this.ctx.type,
+                    tabindex: this.ctx.tabindex,
+                    disabled: this.mods.disabled,
+                    name: this.ctx.name,
+                    value: this.ctx.value
+                } : '')
+        ) this.apply();
+    }
+
+    js: true
+    tag: 'span'
+    attrs: {
+        var a = { role: 'button' };
+        this.ctx.url && (a.href = this.ctx.url);
+        this.ctx.target && (a.target = this.ctx.target);
+        this.ctx.counter && (a.onmousedown = this.ctx.counter);
+        this.mods.disabled && (a['aria-disabled'] = true);
+
+        return a;
+    }
+
+    this.ctx, this.ctx.url, tag: 'a'
+
+    elem input {
+        tag: 'input',
+        attrs: {
+            var a = { type: this.ctx.type, value: '' },
+                ctx = this.ctx;
+
+            var props = ['tabindex', 'name', 'value'], p;
+            while(p = props.shift())
+                ctx[p] && (a[p] = ctx[p]);
+
+            ctx.disabled && (a.disabled = 'disabled');
+
+            return a;
+        }
+    }
+
+    elem click {
+        tag: 'span'
+    }
+}

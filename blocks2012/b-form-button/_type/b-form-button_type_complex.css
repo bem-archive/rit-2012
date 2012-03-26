@@ -1,0 +1,38 @@
+.b-form-button_type_complex
+{
+    /* background-image задаётся в _theme *//**/
+    background-repeat: no-repeat;
+    background-position: 100% -55px/*!head*/;
+}
+
+.b-form-button_type_complex .b-form-button__left
+{
+    font-style: normal;
+
+    display: inline-block;
+
+    height: 100%;
+
+    vertical-align: top;
+
+    background: no-repeat 0 2px; /* no-repeat жизненно необходимо для FF2, для других браузеров ничего не изменится  *//**/
+}
+
+.b-form-button_type_complex .b-form-button__content
+{
+    font: 13px Arial, sans-serif;
+
+    display: inline-block;
+
+    height: 100%;
+
+    text-align: center;
+    white-space: nowrap;
+
+    background: repeat-x 0 -112px;
+}
+
+.b-form-button_type_complex .b-form-button__text
+{
+    display: inline-block;
+}

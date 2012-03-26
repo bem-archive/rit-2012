@@ -1,0 +1,24 @@
+block b-form-button, mod type complex {
+
+    content: [
+        { elem: 'left' },
+        {
+            elem: 'content',
+            tag: 'span',
+            content: {
+                elem: 'text',
+                content: this.ctx.content
+            }
+        },
+        this._click,
+        this._input
+    ]
+
+    elem left, tag: 'i'
+
+    elem text {
+        tag: 'span',
+        content: this.ctx.content
+    }
+
+}
