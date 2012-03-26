@@ -10,7 +10,6 @@ block b-form-button, mod type complex {
                 content: this.ctx.content
             }
         },
-        this._click,
         this._input
     ]
 

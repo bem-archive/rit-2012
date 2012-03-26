@@ -10,13 +10,10 @@
     content: {
         block: 'i-lego-example',
         content: {
-            tag: 'p',
-            content: {
-                block: 'b-form-button',
-                mods: { type: 'complex', theme: 'grey-s', size: 's' },
-                url: 'http://ya.ru',
-                content: 'Я.Простая ссылка'
-            }
+            block: 'b-form-button',
+            mods: { type: 'complex', theme: 'grey-s', size: 's' },
+            url: 'http://ya.ru',
+            content: 'Я.Простая ссылка'
         }
     }
 })

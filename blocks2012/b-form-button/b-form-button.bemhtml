@@ -11,7 +11,11 @@ block b-form-button {
                     disabled: this.mods.disabled,
                     name: this.ctx.name,
                     value: this.ctx.value
-                } : '')
+                } :
+                {
+                    elem: 'click',
+                    tag: 'span'
+                })
         ) this.apply();
     }
 
@@ -43,9 +47,5 @@ block b-form-button {
 
             return a;
         }
-    }
-
-    elem click {
-        tag: 'span'
     }
 }

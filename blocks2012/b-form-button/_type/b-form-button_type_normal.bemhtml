@@ -8,7 +8,6 @@ block b-form-button, mod type normal {
                 content: this.ctx.content
             }
         },
-        this._click,
         this._input
     ]
 
