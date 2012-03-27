@@ -25,22 +25,6 @@
                         'Я.Ссылка с иконкой серпа'
                     ]
                 }
-            },
-            {
-                tag: 'p',
-                content: {
-                    block: 'b-form-button',
-                    mods: { type: 'simple', size: 'l' },
-                    url: 'http://ya.ru',
-                    content: [
-                        {
-                            block: 'b-icon',
-                            url: 'http://yandex.st/lego/_/Kx6F6RQnQFitm0qRxX7vpvfP0K0.png',
-                            alt: 'Иконка Серпа'
-                        },
-                        'Я.Простая ссылка с иконкой серпа'
-                    ]
-                }
             }
         ]
 

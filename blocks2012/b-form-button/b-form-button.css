@@ -1,0 +1,27 @@
+.b-form-button
+{
+    font-family: Arial, sans-serif;
+
+    position: relative;
+
+    display: inline-block;
+
+    outline: 0;
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+
+    text-align: right; /* Opera && FF2 *//**/
+}
+
+a.b-form-button:link,
+a.b-form-button:hover,
+a.b-form-button:visited
+{
+    text-decoration: none;
+}
+
+.b-form-button__text
+{
+    display: inline-block;
+}

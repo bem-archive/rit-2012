@@ -6,14 +6,6 @@ exports.blocks = [
         "name": "i-lego-example"
     },
     {
-        "name": "b-form-button",
-        "mods": [
-            {
-                "name": "type",
-                "vals": [
-                    "simple"
-                ]
-            }
-        ]
+        "name": "b-form-button"
     }
 ]

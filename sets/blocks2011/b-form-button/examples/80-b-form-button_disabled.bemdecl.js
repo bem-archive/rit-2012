@@ -13,12 +13,6 @@ exports.blocks = [
                 "vals": [
                     "yes"
                 ]
-            },
-            {
-                "name": "type",
-                "vals": [
-                    "simple"
-                ]
             }
         ]
     }

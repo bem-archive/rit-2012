@@ -1,0 +1,26 @@
+.b-form-button_size_xl
+{
+    font-size: 19px;
+}
+
+.b-form-button_size_xl.b-form-button_type_complex
+{
+    height: 37px;
+}
+
+.b-form-button_size_xl .b-form-button__content
+{
+    line-height: 36px;
+}
+
+.b-form-button_size_xl.b-form-button_type_normal
+{
+    height: 31px;
+
+    line-height: 31px;
+}
+
+.b-form-button_size_xl .b-form-button__text
+{
+    padding: 0 15px;
+}
