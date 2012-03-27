@@ -1,0 +1,113 @@
+.b-form-button_type_complex
+{
+    /* background-image задаётся в _theme *//**/
+    background-repeat: no-repeat;
+    background-position: 100% -55px/*!head*/;
+}
+
+.b-form-button_type_complex .b-form-button__left
+{
+    font-style: normal;
+
+    display: inline-block;
+
+    width: 5px;
+    height: 100%;
+    margin-right: -5px; /* FF2 *//**/
+
+    vertical-align: top;
+
+    background: no-repeat 0 2px; /* no-repeat жизненно необходимо для FF2, для других браузеров ничего не изменится  *//**/
+}
+
+.b-form-button_type_complex .b-form-button__content
+{
+    display: inline-block;
+
+    height: 100%;
+    margin: 0 5px; /* margin-left для FF2 *//**/
+
+    text-align: center;
+    white-space: nowrap;
+
+    background: repeat-x 0 -112px;
+}
+
+/* Pressed */ /**/
+.b-form-button_type_complex.b-form-button_pressed_yes
+{
+    background-position: 100% -399px !important;
+}
+
+.b-form-button_pressed_yes .b-form-button__left
+{
+    background-position: 0 -342px !important;
+}
+
+.b-form-button_pressed_yes .b-form-button__content
+{
+    background-position: 0 -456px !important;
+}
+
+/* Hovered */ /**/
+.b-form-button_type_complex.b-form-button_hovered_yes
+{
+    background-position: 100% -226px;
+}
+
+.b-form-button_hovered_yes .b-form-button__left
+{
+    background-position: 0 -169px;
+}
+
+.b-form-button_hovered_yes .b-form-button__content
+{
+    background-position: 0 -283px;
+}
+
+/* Focused */ /**/
+.b-form-button_type_complex.b-form-button_focused_yes
+{
+    background-position: 100% -570px;
+}
+
+.b-form-button_focused_yes .b-form-button__left
+{
+    background-position: 0 -513px;
+}
+
+.b-form-button_focused_yes .b-form-button__content
+{
+    background-position: 0 -627px;
+}
+
+.b-form-button_focused_yes.b-form-button_hovered_yes
+{
+    background-position: 100% -741px;
+}
+
+.b-form-button_focused_yes.b-form-button_hovered_yes .b-form-button__left
+{
+    background-position: 0 -684px;
+}
+
+.b-form-button_focused_yes.b-form-button_hovered_yes .b-form-button__content
+{
+    background-position: 0 -798px;
+}
+
+/* Disabled */ /**/
+body .b-form-button_type_complex.b-form-button_disabled_yes
+{
+    background-position: 100% -910px !important;
+}
+
+body .b-form-button_disabled_yes .b-form-button__left
+{
+    background-position: 0 -853px !important;
+}
+
+body .b-form-button_disabled_yes .b-form-button__content
+{
+    background-position: 0 -967px !important;
+}

@@ -1,0 +1,20 @@
+.b-form-button_type_normal
+{
+    /*top: -1px;*/
+
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+
+    border-width: 1px;
+    border-style: outset outset outset inset;
+
+    background-clip: border-box;
+    -moz-background-clip: border-box;
+    -webkit-background-clip: border-box;
+}
+
+.b-form-button_type_normal.b-form-button_disabled_yes
+{
+    opacity: 0.35;
+}

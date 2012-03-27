@@ -16,12 +16,6 @@ exports.blocks = [
                 "vals": [
                     "middle"
                 ]
-            },
-            {
-                "name": "type",
-                "vals": [
-                    "simple"
-                ]
             }
         ]
     }

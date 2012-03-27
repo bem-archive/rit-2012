@@ -230,20 +230,12 @@ body .b-form-button_disabled_yes .b-form-button__content
     margin-right: -5px; /* FF2 *//**/
 }
 
-.b-form-button_size_s .b-form-button__simple,
 .b-form-button_size_s .b-form-button__content
 {
     font: 11px/21px Verdana, Arial, sans-serif;
 
     margin: 0 5px; /* margin-left для FF2 *//**/
     padding: 0 9px;
-}
-
-.b-form-button_size_s .b-form-button__simple
-{
-    height: 19px;
-
-    line-height: 17px;
 }
 
 .b-form-button_theme_grey-no-transparent-s,
@@ -309,7 +301,6 @@ body .b-form-button_disabled_yes .b-form-button__content
     margin-right: -5px; /* FF2 *//**/
 }
 
-.b-form-button_size_m .b-form-button__simple,
 .b-form-button_size_m .b-form-button__content
 {
     font-size: 13px;
@@ -318,13 +309,6 @@ body .b-form-button_disabled_yes .b-form-button__content
     padding: 0 10px;
 
     line-height: 25px;
-}
-
-.b-form-button_size_m .b-form-button__simple
-{
-    height: 22px;
-
-    line-height: 21px;
 }
 
 .b-form-button_size_l
@@ -338,7 +322,6 @@ body .b-form-button_disabled_yes .b-form-button__content
     margin-right: -5px; /* FF2 *//**/
 }
 
-.b-form-button_size_l .b-form-button__simple,
 .b-form-button_size_l .b-form-button__content
 {
     font-size: 15px;
@@ -347,13 +330,6 @@ body .b-form-button_disabled_yes .b-form-button__content
     padding: 0 10px;
 
     line-height: 29px;
-}
-
-.b-form-button_size_l .b-form-button__simple
-{
-    height: 26px;
-
-    line-height: 25px;
 }
 
 .b-form-button_size_xl
@@ -367,7 +343,6 @@ body .b-form-button_disabled_yes .b-form-button__content
     margin-right: -5px; /* FF2 *//**/
 }
 
-.b-form-button_size_xl .b-form-button__simple,
 .b-form-button_size_xl .b-form-button__content
 {
     font-size: 19px;
@@ -376,12 +351,5 @@ body .b-form-button_disabled_yes .b-form-button__content
     padding: 0 15px;
 
     line-height: 36px;
-}
-
-.b-form-button_size_xl .b-form-button__simple
-{
-    height: 33px;
-
-    line-height: 33px;
 }
 

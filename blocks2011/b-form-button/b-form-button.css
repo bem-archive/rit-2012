@@ -1,5 +1,7 @@
 .b-form-button
 {
+    position: relative;
+
     display: inline-block;
 
     outline: 0;

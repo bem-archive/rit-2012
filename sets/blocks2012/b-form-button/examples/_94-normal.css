@@ -1,0 +1,430 @@
+.b-form-button
+{
+    font-family: Arial, sans-serif;
+
+    position: relative;
+
+    display: inline-block;
+
+    outline: 0;
+    cursor: default;
+    user-select: none;
+    -moz-user-select: none;
+
+    text-align: right; /* Opera && FF2 *//**/
+}
+
+a.b-form-button:link,
+a.b-form-button:hover,
+a.b-form-button:visited
+{
+    text-decoration: none;
+}
+
+.b-form-button__text
+{
+    display: inline-block;
+}
+
+.b-form-button__input
+{
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 -100%;
+    padding: 0;
+
+    vertical-align: top;
+
+    opacity: 0;
+    border: 0;
+    outline: 0;
+
+    font: 0/0 a;
+    letter-spacing: -10px;
+}
+
+/* FF > 2 иначе инпут растягивается больше чем на 100%*//**/
+.b-form-button__input::-moz-focus-inner
+{
+    padding: 0;
+
+    border: 0;
+}
+
+.b-form-button__click
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    font: 0/0 a;
+}
+
+/* Страшный хак для всех Опер http://dimox.name/personal_css_hacks_for_opera_firefox_ie/ */ /**/
+@media all and (-webkit-min-device-pixel-ratio:10000),
+not all and (-webkit-min-device-pixel-ratio:0)
+{
+    .b-form-button__click
+    {
+        position: relative;
+        top: -100%;
+        left: 0;
+
+        display: block;
+    }
+}
+
+.b-form-button_pressed_yes .b-form-button__text
+{
+    padding-top: 1px !important;
+}
+
+.b-form-button_theme_normal-grey
+{
+    color: #000;
+
+    border-color: rgba(192,192,192,0.5) rgba(192,192,192,0.3) rgba(49,49,49,0.45);
+
+    background: linear-gradient(top,  rgba(255,255,255,0.9) 10%,rgba(216,216,216,0.66) 75%,rgba(193,193,193,0.66) 92%,rgba(168,168,168,0.66) 100%);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.9) 10%, rgba(216,216,216,0.66) 75%, rgba(193,193,193,0.66) 92%, rgba(168,168,168,0.66) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,rgba(255,255,255,0.9)), color-stop(75%,rgba(216,216,216,0.66)), color-stop(92%,rgba(193,193,193,0.66)), color-stop(100%,rgba(168,168,168,0.66)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.9) 10%,rgba(216,216,216,0.66) 75%,rgba(193,193,193,0.66) 92%,rgba(168,168,168,0.66) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,0.9) 10%,rgba(216,216,216,0.66) 75%,rgba(193,193,193,0.66) 92%,rgba(168,168,168,0.66) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0.9) 10%,rgba(216,216,216,0.66) 75%,rgba(193,193,193,0.66) 92%,rgba(168,168,168,0.66) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#a8d6d6d6',GradientType=0 ); /* IE6-9 */
+}
+
+body .b-form-button_theme_normal-grey.b-form-button_hovered_yes
+{
+    border-top-style: solid;
+
+    background: linear-gradient(top,  rgba(255,255,255,0.9) 10%,rgba(206,206,206,0.61) 59%,rgba(193,193,193,0.66) 87%,rgba(198,198,198,0.66) 88%,rgba(255,255,255,1) 100%);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.9) 10%, rgba(206,206,206,0.61) 59%, rgba(193,193,193,0.66) 87%, rgba(198,198,198,0.66) 94%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%,rgba(255,255,255,0.9)), color-stop(59%,rgba(206,206,206,0.61)), color-stop(87%,rgba(193,193,193,0.66)), color-stop(88%,rgba(198,198,198,0.66)), color-stop(100%,rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.9) 10%,rgba(206,206,206,0.61) 59%,rgba(193,193,193,0.66) 87%,rgba(198,198,198,0.66) 94%,rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,0.9) 10%,rgba(206,206,206,0.61) 59%,rgba(193,193,193,0.66) 87%,rgba(198,198,198,0.66) 94%,rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0.9) 10%,rgba(206,206,206,0.61) 59%,rgba(193,193,193,0.66) 87%,rgba(198,198,198,0.66) 94%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f7f7f7', endColorstr='#a8d4d4d4',GradientType=0 ); /* IE6-9 */
+}
+
+.b-form-button_theme_normal-grey.b-form-button_focused_yes
+{
+    box-shadow: 0 0 0.1em #ffd438, 0 0 0.13em #ffd438, 0 0 0.2em #ffd438, 0 0 0.3em #ffd438;
+    -moz-box-shadow: 0 0 0.1em #ffd438, 0 0 0.13em #ffd438;
+    -webkit-box-shadow: 0 0 0.25em #ffd438, 0 0 0.25em #ffd438;
+}
+
+body .b-form-button_theme_normal-grey.b-form-button_pressed_yes
+{
+    border-style: double;
+    border-color: rgba(100,80,0,0.4) rgba(102,82,0,0.45) rgba(133,106,0,0.5);
+
+    box-shadow: 0 0 0.1em #ffd438, 0 0 0.13em #ffd438, 0 0 0.2em #ffd438, inset 0 1px 0.17em rgba(0,0,0,0.32);
+    -moz-box-shadow: 0 0 0.1em #ffd438, 0 0 0.13em #ffd438, inset 0 1px 0.17em rgba(0,0,0,0.32);
+    -webkit-box-shadow: 0 0 0.25em #ffd438, 0 0 0.25em #ffd438, inset 0 1px 0.25em rgba(0,0,0,0.32);
+}
+
+.b-form-button_type_normal
+{
+    /*top: -1px;*/
+
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+
+    border-width: 1px;
+    border-style: outset outset outset inset;
+
+    background-clip: border-box;
+    -moz-background-clip: border-box;
+    -webkit-background-clip: border-box;
+}
+
+.b-form-button_type_normal.b-form-button_disabled_yes
+{
+    opacity: 0.35;
+}
+
+.b-form-button_type_complex
+{
+    /* background-image задаётся в _theme *//**/
+    background-repeat: no-repeat;
+    background-position: 100% -55px/*!head*/;
+}
+
+.b-form-button_type_complex .b-form-button__left
+{
+    font-style: normal;
+
+    display: inline-block;
+
+    width: 5px;
+    height: 100%;
+    margin-right: -5px; /* FF2 *//**/
+
+    vertical-align: top;
+
+    background: no-repeat 0 2px; /* no-repeat жизненно необходимо для FF2, для других браузеров ничего не изменится  *//**/
+}
+
+.b-form-button_type_complex .b-form-button__content
+{
+    display: inline-block;
+
+    height: 100%;
+    margin: 0 5px; /* margin-left для FF2 *//**/
+
+    text-align: center;
+    white-space: nowrap;
+
+    background: repeat-x 0 -112px;
+}
+
+/* Pressed */ /**/
+.b-form-button_type_complex.b-form-button_pressed_yes
+{
+    background-position: 100% -399px !important;
+}
+
+.b-form-button_pressed_yes .b-form-button__left
+{
+    background-position: 0 -342px !important;
+}
+
+.b-form-button_pressed_yes .b-form-button__content
+{
+    background-position: 0 -456px !important;
+}
+
+/* Hovered */ /**/
+.b-form-button_type_complex.b-form-button_hovered_yes
+{
+    background-position: 100% -226px;
+}
+
+.b-form-button_hovered_yes .b-form-button__left
+{
+    background-position: 0 -169px;
+}
+
+.b-form-button_hovered_yes .b-form-button__content
+{
+    background-position: 0 -283px;
+}
+
+/* Focused */ /**/
+.b-form-button_type_complex.b-form-button_focused_yes
+{
+    background-position: 100% -570px;
+}
+
+.b-form-button_focused_yes .b-form-button__left
+{
+    background-position: 0 -513px;
+}
+
+.b-form-button_focused_yes .b-form-button__content
+{
+    background-position: 0 -627px;
+}
+
+.b-form-button_focused_yes.b-form-button_hovered_yes
+{
+    background-position: 100% -741px;
+}
+
+.b-form-button_focused_yes.b-form-button_hovered_yes .b-form-button__left
+{
+    background-position: 0 -684px;
+}
+
+.b-form-button_focused_yes.b-form-button_hovered_yes .b-form-button__content
+{
+    background-position: 0 -798px;
+}
+
+/* Disabled */ /**/
+body .b-form-button_type_complex.b-form-button_disabled_yes
+{
+    background-position: 100% -910px !important;
+}
+
+body .b-form-button_disabled_yes .b-form-button__left
+{
+    background-position: 0 -853px !important;
+}
+
+body .b-form-button_disabled_yes .b-form-button__content
+{
+    background-position: 0 -967px !important;
+}
+
+.b-form-button_theme_grey-xl,
+.b-form-button_theme_grey-xl .b-form-button__left,
+.b-form-button_theme_grey-xl .b-form-button__content
+{
+    color: #000;
+    background-image: url("../../../../blocks2012/b-form-button/_theme/b-form-button_theme_grey-xl.png");
+}
+
+body .b-form-button_disabled_yes .b-form-button__content
+{
+    color: #999 !important;
+}
+
+.b-form-button_theme_grey-l,
+.b-form-button_theme_grey-l .b-form-button__left,
+.b-form-button_theme_grey-l .b-form-button__content
+{
+    color: #000;
+    background-image: url("../../../../blocks2012/b-form-button/_theme/b-form-button_theme_grey-l.png");
+}
+
+body .b-form-button_disabled_yes .b-form-button__content
+{
+    color: #999 !important;
+}
+
+.b-form-button_theme_grey-m,
+.b-form-button_theme_grey-m .b-form-button__left,
+.b-form-button_theme_grey-m .b-form-button__content
+{
+    color: #000;
+    background-image: url("../../../../blocks2012/b-form-button/_theme/b-form-button_theme_grey-m.png");
+}
+
+body .b-form-button_disabled_yes .b-form-button__content
+{
+    color: #999 !important;
+}
+
+.b-form-button_theme_grey-s,
+.b-form-button_theme_grey-s .b-form-button__left,
+.b-form-button_theme_grey-s .b-form-button__content
+{
+    color: #000;
+    background-image: url("../../../../blocks2012/b-form-button/_theme/b-form-button_theme_grey-s.png");
+}
+
+body .b-form-button_disabled_yes .b-form-button__content
+{
+    color: #999 !important;
+}
+.b-form-button_size_xl
+{
+    font-size: 19px;
+}
+
+.b-form-button_size_xl.b-form-button_type_complex
+{
+    height: 37px;
+}
+
+.b-form-button_size_xl .b-form-button__content
+{
+    line-height: 36px;
+}
+
+.b-form-button_size_xl.b-form-button_type_normal
+{
+    height: 31px;
+
+    line-height: 31px;
+}
+
+.b-form-button_size_xl .b-form-button__text
+{
+    padding: 0 15px;
+}
+
+.b-form-button_size_l
+{
+    font-size: 15px;
+}
+
+.b-form-button_type_complex.b-form-button_size_l
+{
+    height: 30px;
+}
+
+.b-form-button_size_l .b-form-button__text
+{
+    padding: 0 10px;
+}
+
+.b-form-button_size_l .b-form-button__content
+{
+    line-height: 29px;
+}
+
+.b-form-button_type_normal.b-form-button_size_l
+{
+    height: 24px;
+
+    line-height: 24px;
+}
+
+.b-form-button_size_m
+{
+    font-size: 13px;
+}
+
+.b-form-button_size_m.b-form-button_type_complex
+{
+    height: 26px;
+}
+
+.b-form-button_size_m .b-form-button__content
+{
+    line-height: 25px;
+}
+
+.b-form-button_size_m.b-form-button_type_normal
+{
+    height: 20px;
+
+    line-height: 19px;
+}
+
+.b-form-button_size_m .b-form-button__text
+{
+    padding: 0 10px;
+}
+
+.b-form-button_size_s
+{
+    font: 11px Verdana, Arial, sans-serif;
+}
+
+.b-form-button_size_s.b-form-button_type_complex
+{
+    height: 23px;
+}
+
+.b-form-button_size_s .b-form-button__content
+{
+    line-height: 21px;
+}
+
+.b-form-button_size_s.b-form-button_type_normal
+{
+    height: 17px;
+
+    line-height: 15px;
+}
+
+.b-form-button_size_s .b-form-button__text
+{
+    padding: 0 9px;
+}
+
+.b-form-button_valign_middle
+{
+    vertical-align: middle;
+}
+

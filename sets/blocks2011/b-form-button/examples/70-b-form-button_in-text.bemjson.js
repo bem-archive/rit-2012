@@ -38,12 +38,6 @@
                                         ' поставить на цветной фон, то она принимает тон фона-подложки. Сейчас высота кнопки 19px, ширина без ограничений — можно тянуть на столько, на сколько надо. ' +
                                         'Это наиболее востребованный размер. Остальные размеры мы договорились делать, если в них есть потребность. Если вам нужна кнопка больше или меньше этой — напишите на lego@.' +
                                         ' С версии 2.9 появилась ',
-                                        {
-                                            block: 'b-form-button',
-                                            mods: { type: 'simple', valign: 'middle' },
-                                            url: '/',
-                                            content: 'простая кнопка/ссылка'
-                                        },
                                         'которая должна заменить собой псевдо-ссылки.'
                                     ]
                                 }
@@ -91,54 +85,6 @@
                                     {
                                         block: 'b-form-button',
                                         mods: { valign: 'middle' },
-                                        type: 'button',
-                                        content: 'Вправо'
-                                    }, ' и вниз'
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        tag: 'tr',
-                        attrs: { style: 'background: #9acd32;' },
-                        content: [
-                            {
-                                tag: 'td',
-                                attrs: { style: 'text-align: left; vertical-align: top;' },
-                                content: [
-                                    'Влево ', {
-                                        block: 'b-form-button',
-                                        mods: { type: 'simple', valign: 'middle' },
-                                        type: 'button',
-                                        content: 'И вверх'
-                                    }
-                                ]
-                            },
-                            {
-                                tag: 'td',
-                                attrs: { style: 'text-align: center; vertical-align: middle;' },
-                                content: [
-                                    {
-                                        block: 'b-form-button',
-                                        mods: { type: 'simple', valign: 'middle' },
-                                        type: 'button',
-                                        content: 'По центру'
-                                    },
-                                    {
-                                        block: 'b-form-button',
-                                        mods: { type: 'simple', valign: 'middle' },
-                                        type: 'button',
-                                        content: 'По центру'
-                                    }
-                                ]
-                            },
-                            {
-                                tag: 'td',
-                                attrs: { style: 'text-align: right; vertical-align: bottom;' },
-                                content: [
-                                    {
-                                        block: 'b-form-button',
-                                        mods: { type: 'simple', valign: 'middle' },
                                         type: 'button',
                                         content: 'Вправо'
                                     }, ' и вниз'

@@ -34,12 +34,6 @@ exports.blocks = [
                     "l",
                     "xl"
                 ]
-            },
-            {
-                "name": "type",
-                "vals": [
-                    "simple"
-                ]
             }
         ]
     }

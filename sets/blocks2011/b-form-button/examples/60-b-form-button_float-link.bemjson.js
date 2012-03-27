@@ -30,12 +30,6 @@
                                     content: 'Ссылка float right'
                                 },
                                 {
-                                    block: 'b-form-button',
-                                    mods: { type: 'simple', 'float': 'left' },
-                                    url: '//ya.ru',
-                                    content: 'Простая ссылка float left'
-                                },
-                                {
                                     tag: 'p',
                                     content: 'Люблю грозу в начале мая, когда весенний, первый гром как бы резвяся и играя, грохочет в небе голубом. Гремят раскаты молодые, вот дождик брызнул, пыль летит, повисли перлы дождевые и солнце нити золотит. С горы бежит поток проворный, в лесу не молкнет птичий гам. И гам лесной, и шум нагорный - все вторит весело громам.'
                                 }
@@ -50,12 +44,6 @@
                                     mods: { 'float': 'left' },
                                     type: 'button',
                                     content: 'Button float left'
-                                },
-                                {
-                                    block: 'b-form-button',
-                                    mods: { type: 'simple', 'float': 'right' },
-                                    type: 'button',
-                                    content: 'Просто button float right'
                                 },
                                 {
                                     tag: 'p',
