@@ -81,10 +81,10 @@ not all and (-webkit-min-device-pixel-ratio:0)
 
 .b-form-button_pressed_yes .b-form-button__text
 {
-    padding-top: 1px;
+    padding-top: 1px !important;
 }
 
-.b-form-button_theme_normal-grey .b-form-button__normal
+.b-form-button_theme_normal-grey
 {
     color: #000;
 
@@ -99,7 +99,7 @@ not all and (-webkit-min-device-pixel-ratio:0)
     /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#a8a8a8a8',GradientType=0 );*/
 }
 
-.b-form-button_theme_normal-grey.b-form-button_hovered_yes .b-form-button__normal
+.b-form-button_theme_normal-grey.b-form-button_hovered_yes
 {
     border-top-style: solid;
 
@@ -109,57 +109,61 @@ not all and (-webkit-min-device-pixel-ratio:0)
     background: -webkit-linear-gradient(top,  rgba(255,255,255,0.9) 10%,rgba(206,206,206,0.61) 59%,rgba(193,193,193,0.66) 87%,rgba(198,198,198,0.66) 94%,rgba(255,255,255,1) 100%);
     background: -o-linear-gradient(top,  rgba(255,255,255,0.9) 10%,rgba(206,206,206,0.61) 59%,rgba(193,193,193,0.66) 87%,rgba(198,198,198,0.66) 94%,rgba(255,255,255,1) 100%);
     background: -ms-linear-gradient(top,  rgba(255,255,255,0.9) 10%,rgba(206,206,206,0.61) 59%,rgba(193,193,193,0.66) 87%,rgba(198,198,198,0.66) 94%,rgba(255,255,255,1) 100%);
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#ffffff',GradientType=0 );*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#00ffffff',GradientType=0 );*/
 }
 
 .b-form-button_theme_normal-grey.b-form-button_focused_yes
 {
-    box-shadow: 0 0 0.1em #ffd438, 0 0 0.13em #ffd438, 0 0 0.13em #ffd438;
+    box-shadow: 0 0 0.1em #ffd438, 0 0 0.13em #ffd438, 0 0 0.2em #ffd438, 0 0 0.2em #ffd438;
     -moz-box-shadow: 0 0 0.1em #ffd438, 0 0 0.13em #ffd438;
     -webkit-box-shadow: 0 0 0.25em #ffd438, 0 0 0.25em #ffd438;
 }
 
 .b-form-button_theme_normal-grey.b-form-button_pressed_yes
 {
+    border-style: double;
+    border-color: rgba(100,80,0,0.4) rgba(102,82,0,0.45) rgba(133,106,0,0.5);
+
     box-shadow: 0 0 0.1em #ffd438, 0 0 0.13em #ffd438, 0 0 0.13em #ffd438, inset 0 1px 0.17em rgba(0,0,0,0.32);
-    /*box-shadow: 0 0 0.1em #ffd438, 0 0 0.13em #ffd438, 0 0 0.13em #ffd438, 0 0 0.13em #ffd438,0 0 0.13em #ffd438, inset 0 1px 3px rgba(0,0,0,1);*/
     -moz-box-shadow: 0 0 0.1em #ffd438, 0 0 0.13em #ffd438, inset 0 1px 0.17em rgba(0,0,0,0.32);
     -webkit-box-shadow: 0 0 0.25em #ffd438, 0 0 0.25em #ffd438, inset 0 1px 0.25em rgba(0,0,0,0.32);
 }
 
-.b-form-button_theme_normal-grey.b-form-button_pressed_yes .b-form-button__normal
-{
-    border-style: double;
-    border-color: rgba(100,80,0,0.4) rgba(102,82,0,0.45) rgba(133,106,0,0.5);
-}
 .b-form-button_type_normal
 {
-    top: -1px;
+    /*top: -1px;*/
 
-    border-radius: 0.27em;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-}
-
-.b-form-button__normal
-{
-    display: inline-block;
-
-    height: 100%;
-
-    white-space: nowrap;
-
-    border-radius: 0.27em;
+    border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
 
     border-width: 1px;
-    border-collapse: separate; /* IE9 */ /**/
     border-style: outset outset outset inset;
 
     background-clip: border-box;
     -moz-background-clip: border-box;
     -webkit-background-clip: border-box;
+}
+
+.b-form-button__normal
+{
+    /*display: inline-block;*/
+
+    /*height: 100%;*/
+
+    /*white-space: nowrap;*/
+
+    /*border-radius: 0.27em;*/
+    /*-moz-border-radius: 3px;*/
+    /*-webkit-border-radius: 3px;*/
+
+    /*border-width: 1px;*/
+    /*border-collapse: separate; *//* IE9 *//* *//**/
+    /*border-style: outset outset outset inset;*/
+
+    /*background-clip: border-box;*/
+    /*-moz-background-clip: border-box;*/
+    /*-webkit-background-clip: border-box;*/
 }
 
 .b-form-button_disabled_yes .b-form-button__normal
@@ -203,7 +207,7 @@ not all and (-webkit-min-device-pixel-ratio:0)
 }
 
 /* Pressed */ /**/
-.b-form-button_pressed_yes
+.b-form-button_type_complex.b-form-button_pressed_yes
 {
     background-position: 100% -399px !important;
 }
@@ -219,7 +223,7 @@ not all and (-webkit-min-device-pixel-ratio:0)
 }
 
 /* Hovered */ /**/
-.b-form-button_hovered_yes
+.b-form-button_type_complex.b-form-button_hovered_yes
 {
     background-position: 100% -226px;
 }
@@ -235,7 +239,7 @@ not all and (-webkit-min-device-pixel-ratio:0)
 }
 
 /* Focused */ /**/
-.b-form-button_focused_yes
+.b-form-button_type_complex.b-form-button_focused_yes
 {
     background-position: 100% -570px;
 }
@@ -266,7 +270,7 @@ not all and (-webkit-min-device-pixel-ratio:0)
 }
 
 /* Disabled */ /**/
-body .b-form-button_disabled_yes
+body .b-form-button_type_complex.b-form-button_disabled_yes
 {
     background-position: 100% -910px !important;
 }
@@ -344,21 +348,19 @@ body .b-form-button_disabled_yes .b-form-button__content
 
 .b-form-button_size_xl .b-form-button__content
 {
-    padding: 0 15px;
-
     line-height: 36px;
 }
 
 .b-form-button_size_xl.b-form-button_type_normal
 {
     height: 31px;
-}
-
-.b-form-button_size_xl .b-form-button__normal
-{
-    padding: 0 15px;
 
     line-height: 31px;
+}
+
+.b-form-button_size_xl .b-form-button__text
+{
+    padding: 0 15px;
 }
 
 .b-form-button_size_l
@@ -371,21 +373,19 @@ body .b-form-button_disabled_yes .b-form-button__content
     height: 30px;
 }
 
-.b-form-button_size_l .b-form-button__content
+.b-form-button_size_l .b-form-button__text
 {
     padding: 0 10px;
+}
 
+.b-form-button_size_l .b-form-button__content
+{
     line-height: 29px;
 }
 
 .b-form-button_type_normal.b-form-button_size_l
 {
     height: 24px;
-}
-
-.b-form-button_size_l .b-form-button__normal
-{
-    padding: 0 10px;
 
     line-height: 24px;
 }
@@ -402,21 +402,19 @@ body .b-form-button_disabled_yes .b-form-button__content
 
 .b-form-button_size_m .b-form-button__content
 {
-    padding: 0 10px;
-
     line-height: 25px;
 }
 
 .b-form-button_size_m.b-form-button_type_normal
 {
     height: 20px;
-}
-
-.b-form-button_size_m .b-form-button__normal
-{
-    padding: 0 10px;
 
     line-height: 19px;
+}
+
+.b-form-button_size_m .b-form-button__text
+{
+    padding: 0 10px;
 }
 
 .b-form-button_size_s
@@ -431,21 +429,19 @@ body .b-form-button_disabled_yes .b-form-button__content
 
 .b-form-button_size_s .b-form-button__content
 {
-    padding: 0 9px;
-
     line-height: 21px;
 }
 
 .b-form-button_size_s.b-form-button_type_normal
 {
     height: 17px;
-}
-
-.b-form-button_size_s .b-form-button__normal
-{
-    padding: 0 9px;
 
     line-height: 15px;
+}
+
+.b-form-button_size_s .b-form-button__text
+{
+    padding: 0 9px;
 }
 
 .b-form-button_valign_middle

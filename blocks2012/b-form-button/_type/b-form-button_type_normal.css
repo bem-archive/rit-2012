@@ -1,31 +1,38 @@
 .b-form-button_type_normal
 {
-    top: -1px;
+    /*top: -1px;*/
 
-    border-radius: 0.27em;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-}
-
-.b-form-button__normal
-{
-    display: inline-block;
-
-    height: 100%;
-
-    white-space: nowrap;
-
-    border-radius: 0.27em;
+    border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
 
     border-width: 1px;
-    border-collapse: separate; /* IE9 */ /**/
     border-style: outset outset outset inset;
 
     background-clip: border-box;
     -moz-background-clip: border-box;
     -webkit-background-clip: border-box;
+}
+
+.b-form-button__normal
+{
+    /*display: inline-block;*/
+
+    /*height: 100%;*/
+
+    /*white-space: nowrap;*/
+
+    /*border-radius: 0.27em;*/
+    /*-moz-border-radius: 3px;*/
+    /*-webkit-border-radius: 3px;*/
+
+    /*border-width: 1px;*/
+    /*border-collapse: separate; *//* IE9 *//* *//**/
+    /*border-style: outset outset outset inset;*/
+
+    /*background-clip: border-box;*/
+    /*-moz-background-clip: border-box;*/
+    /*-webkit-background-clip: border-box;*/
 }
 
 .b-form-button_disabled_yes .b-form-button__normal

@@ -10,19 +10,17 @@
 
 .b-form-button_size_s .b-form-button__content
 {
-    padding: 0 9px;
-
     line-height: 21px;
 }
 
 .b-form-button_size_s.b-form-button_type_normal
 {
     height: 17px;
-}
-
-.b-form-button_size_s .b-form-button__normal
-{
-    padding: 0 9px;
 
     line-height: 15px;
+}
+
+.b-form-button_size_s .b-form-button__text
+{
+    padding: 0 9px;
 }

@@ -32,27 +32,9 @@ exports.blocks = [
                 ]
             },
             {
-                "name": "disabled",
-                "vals": [
-                    "yes"
-                ]
-            },
-            {
                 "name": "valign",
                 "vals": [
                     "middle"
-                ]
-            },
-            {
-                "name": "hovered",
-                "vals": [
-                    "yes"
-                ]
-            },
-            {
-                "name": "focused",
-                "vals": [
-                    "yes"
                 ]
             }
         ]

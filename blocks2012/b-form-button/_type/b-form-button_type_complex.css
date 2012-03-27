@@ -34,7 +34,7 @@
 }
 
 /* Pressed */ /**/
-.b-form-button_pressed_yes
+.b-form-button_type_complex.b-form-button_pressed_yes
 {
     background-position: 100% -399px !important;
 }
@@ -50,7 +50,7 @@
 }
 
 /* Hovered */ /**/
-.b-form-button_hovered_yes
+.b-form-button_type_complex.b-form-button_hovered_yes
 {
     background-position: 100% -226px;
 }
@@ -66,7 +66,7 @@
 }
 
 /* Focused */ /**/
-.b-form-button_focused_yes
+.b-form-button_type_complex.b-form-button_focused_yes
 {
     background-position: 100% -570px;
 }
@@ -97,7 +97,7 @@
 }
 
 /* Disabled */ /**/
-body .b-form-button_disabled_yes
+body .b-form-button_type_complex.b-form-button_disabled_yes
 {
     background-position: 100% -910px !important;
 }
