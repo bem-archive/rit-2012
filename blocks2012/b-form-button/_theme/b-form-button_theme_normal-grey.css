@@ -13,7 +13,7 @@
     /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#a8a8a8a8',GradientType=0 );*/
 }
 
-.b-form-button_theme_normal-grey.b-form-button_hovered_yes
+body .b-form-button_theme_normal-grey.b-form-button_hovered_yes
 {
     border-top-style: solid;
 
@@ -33,7 +33,7 @@
     -webkit-box-shadow: 0 0 0.25em #ffd438, 0 0 0.25em #ffd438;
 }
 
-.b-form-button_theme_normal-grey.b-form-button_pressed_yes
+body .b-form-button_theme_normal-grey.b-form-button_pressed_yes
 {
     border-style: double;
     border-color: rgba(100,80,0,0.4) rgba(102,82,0,0.45) rgba(133,106,0,0.5);

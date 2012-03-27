@@ -13,13 +13,13 @@
             content: [
                 {
                     block: 'b-form-button',
-                    mods: { type: 'normal', theme: 'normal-grey', size: 'xl', valign: 'middle' },
+                    mods: { type: 'normal', theme: 'normal-grey', size: 'xl', disabled: 'yes', valign: 'middle' },
                     type: 'submit',
                     content: 'Disabled XL'
                 },'&#160;',
                 {
                     block: 'b-form-button',
-                    mods: { type: 'complex', theme: 'grey-xl', size: 'xl', valign: 'middle' },
+                    mods: { type: 'complex', theme: 'grey-xl', size: 'xl', disabled: 'yes', valign: 'middle' },
                     type: 'submit',
                     content: 'Disabled XL'
                 }
@@ -30,13 +30,13 @@
             content: [
                 {
                     block: 'b-form-button',
-                    mods: { type: 'normal', theme: 'normal-grey', size: 'l', valign: 'middle' },
+                    mods: { type: 'normal', theme: 'normal-grey', size: 'l', hovered: 'yes', valign: 'middle' },
                     type: 'button',
                     content: 'Hovered L'
                 },'&#160;',
                 {
                     block: 'b-form-button',
-                    mods: { type: 'complex', theme: 'grey-l', size: 'l', valign: 'middle' },
+                    mods: { type: 'complex', theme: 'grey-l', size: 'l', hovered: 'yes', valign: 'middle' },
                     type: 'button',
                     content: 'Hovered L'
                 }
@@ -47,14 +47,14 @@
             content: [
                 {
                     block: 'b-form-button',
-                    mods: { type: 'normal', theme: 'normal-grey', size: 'm', valign: 'middle' },
+                    mods: { type: 'normal', theme: 'normal-grey', size: 'm', pressed: 'yes', valign: 'middle' },
                     url: 'http://ya.ru',
                     content: 'Pressed M'
                 },
                 '&#160;',
                 {
                     block: 'b-form-button',
-                    mods: { type: 'complex', theme: 'grey-m', size: 'm', valign: 'middle' },
+                    mods: { type: 'complex', theme: 'grey-m', size: 'm', pressed: 'yes', valign: 'middle' },
                     url: 'http://ya.ru',
                     content: 'Pressed M'
                 }
@@ -65,13 +65,13 @@
             content: [
                 {
                     block: 'b-form-button',
-                    mods: { type: 'normal', theme: 'normal-grey', size: 's', valign: 'middle' },
+                    mods: { type: 'normal', theme: 'normal-grey', size: 's', focused: 'yes', valign: 'middle' },
                     url: 'http://ya.ru',
                     content: 'Focused S'
                 },'&#160;',
                 {
                     block: 'b-form-button',
-                    mods: { type: 'complex', theme: 'grey-s', size: 's', valign: 'middle' },
+                    mods: { type: 'complex', theme: 'grey-s', size: 's', focused: 'yes', valign: 'middle' },
                     url: 'http://ya.ru',
                     content: 'Focused S'
                 }
